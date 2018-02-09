@@ -5,13 +5,16 @@
 } */
 
 p{
-  color: #856363;
-  font-family: Helvetica,Arial,sans-serif
+  color: 	#3D7878;
+font-family: 'Josefin Slab', serif;
 }
 
 h1{
-  font-family: Georgia, "Times New Roman", serif;
-  color: #856363
+  font-family: 'Julius Sans One', sans-serif;
+  color: 	#3D7878
+}
+body{
+	background-color:	#D1E9E9;
 }
 #container {
 width: 95%;
@@ -35,7 +38,7 @@ margin: 0 auto;
 	display: block;
 	text-decoration: none;
 	text-align: center;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:'Dosis', sans-serif;
 	padding:2px;
 }
 
@@ -45,7 +48,7 @@ margin: 0 auto;
 
 .caption {
 	color: #32CD32;
-	font-family: Georgia, "Times New Roman", serif;
+font-family: 'Josefin Slab', serif;
 	font-size: 0.8em;
 	margin-top: 0;
 	text-align: right;
