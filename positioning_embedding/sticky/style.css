@@ -3,7 +3,22 @@
 /*p {
   color: red;
 }*/
+.box{
+  background-color: #ccc;
+  position: sticky;
+  width: 100%;
+  
+}
 
+/* .box{
+  background-color: #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  margin-top: -10px;
+  padding-top: 10px;
+  /* right: 10px; */
+} */
 
 img {
   border: none;
