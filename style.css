@@ -75,8 +75,21 @@ font-family: 'Josefin Slab', serif;
 .navigation li:last-of-type a{
   border-bottom: none;
 }
+
+article{
+  flex: 1 100%
+  padding: 10px
+}
+
 img{
+  border: none;
+  margin-left:auto;
+  margin-right: auto;
   width: 100%
+}
+.container{
+  display:flex;
+  flex-flow: row wrap;
 }
 
 .navigation a:hover{
@@ -101,20 +114,16 @@ img{
   }
 
 .navigation a:hover {
-  text-decoration: none;
-  background: #D3B72F;
+    background: #D3B72F;
+}
+
+.pic {
+  width: 40%;
+  margin-left: 10px;
 }
 article {
      display: flex;
      flex-flow: row;
      flex-wrap: wrap;
+     flex: 30px
  }
-
-img {
-          width: 45%;
-          object-fit: contain;
-      }
-.image{
-  width: 45%
-  margin-right: 10px
-}
