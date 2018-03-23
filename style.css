@@ -92,9 +92,7 @@ img{
   flex-flow: row wrap;
 }
 
-.navigation a:hover{
-  background: #D3B72F;
-}
+
 
 .wrapper{
   display:flex;
