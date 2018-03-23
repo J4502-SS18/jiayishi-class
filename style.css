@@ -16,6 +16,33 @@ h1{
 body{
 	background-color:	#D1E9E9;
 }
+
+.navigation{
+  list-style: none;
+  margin:0;
+  background: #2F4F4F;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.navigation a {
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+.navigation a:hover{
+  background: #D3B72F;
+}
+
 #container {
 width: 95%;
 margin: 0 auto;
@@ -52,3 +79,29 @@ font-family: 'Josefin Slab', serif;
 	margin: auto;
 	padding: 0;
 }
+/* When greater than 800px wide */
+@media (min-width:800px) {
+
+
+
+  .navigation{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+.navigation a:hover {
+  text-decoration: none;
+  background: #D3B72F;
+  text-align: center;
+}
+
+  .navigation li:last-of-type a{
+    border-bottom: none;
+  }
