@@ -83,7 +83,6 @@ font-family: 'Josefin Slab', serif;
 @media (min-width:800px) {
 
 
-
   .navigation{
     display: flex;
     flex-flow: column nowrap;
@@ -101,6 +100,13 @@ font-family: 'Josefin Slab', serif;
   background: #D3B72F;
   text-align: center;
 }
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 
   .navigation li:last-of-type a{
     border-bottom: none;
