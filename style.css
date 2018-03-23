@@ -43,6 +43,11 @@ body{
   background: #D3B72F;
 }
 
+.wrapper{
+display: flex;
+flex-flow:wrap;
+}
+
 #container {
 width: 95%;
 margin: 0 auto;
@@ -80,15 +85,13 @@ font-family: 'Josefin Slab', serif;
 	padding: 0;
 }
 /* When greater than 800px wide */
-@media (min-width:800px) {
-
+@media (min-width:500px) {
 
   .navigation{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+    flex-flow: flex;
+    justify-content:space-between;
+
   }
 
   .navigation a {
@@ -100,13 +103,17 @@ font-family: 'Josefin Slab', serif;
   background: #D3B72F;
   text-align: center;
 }
+
 img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
 }
-
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
 
   .navigation li:last-of-type a{
     border-bottom: none;
