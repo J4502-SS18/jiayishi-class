@@ -7,26 +7,23 @@ font-family: 'Josefin Slab', serif;
 
 h1{
   font-family: 'Julius Sans One', sans-serif;
-  color: 	#3D7878
+  color: 	#3D7878;
 }
 body{
 	background-color:	#D1E9E9;
 }
-img {
-	width: 100%;
-}
 
-#container {
+/* #container {
 width: 95%;
-margin: 0 auto;
+margin: 0;
 }
 #nav{
   list-style-type: none;
   padding: 0;
-}
+} */
 
 #nav a:link, #nav a:visited{
-  display: block;
+  display:block;
   color: #ffffff;
 	background-color: #2F4F4F;
 	font-weight: bold;
@@ -34,10 +31,10 @@ margin: 0 auto;
 	text-decoration: none;
 	text-align: center;
 	font-family:'Dosis', sans-serif;
-	padding:2px;
+	padding:4px;
 }
 
-#nav a:hover, #nav a:active{
+#nav a:hover, #nav a:active {
 	background-color: #CFB53B;
 }
 
@@ -48,16 +45,18 @@ font-family: 'Josefin Slab', serif;
 	margin-top: 0;
 	text-align: right;
 }
-#nav li{
-	margin: auto;
+/* #nav li{
+	margin:auto;
 	padding: 0;
-}
+} */
 
 .navigation{
   list-style: none;
   margin: 0;
   background:#2F4F4F;
   padding: 0;
+  display: flex;
+  flex-flow: column;
 }
 .navigation a {
   text-decoration: none;
@@ -72,20 +71,20 @@ font-family: 'Josefin Slab', serif;
   border-bottom: none;
 
 }
-article{
-  flex: 1 100%
-  padding: 10px
-}
 
 img{
-  width: 100%
+  width: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-flow:row wrap;
 }
 
 /* When greater than 800px wide */
 @media (min-width:800px) {
 
   .navigation {
-      flex-flow: row wrap;
+      flex-flow:row;
       justify-content: flex-end;
   }
 
@@ -94,53 +93,26 @@ img{
   }
 
   .navigation a:hover {
-    background: black;
+    background: #D3B939;
   }
 
-  aside {
-      flex: 1 auto;
-  }
 
-  article {
-  flex: 3 0px;
+article {
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
 }
 
-  .aside-1 {
-      order: 1;
-  }
+.image {
+width: 45%;
+margin-right: 10px;
+}
 
-  article {
-      order: 2;
-  }
+.story {
+width: 45%;
+}
 
-  .aside-2 {
-      order: 3;
-  }
-
-  footer {
-      order: 4;
-  }
-
-img {
- width: 45%;
- float: left;
- margin-right: 10px;
-              }
-              article {
-                  display: flex;
-                  flex-flow: row;
-                  flex-wrap: wrap;
-              }
-              .image {
-                  width: 45%;
-                  margin-right: 10px;
-              }
-
-              .story {
-                  width: 45%;
-              }
-
-              .first {
-                  margin-top: 0;
-              }
-          }
+.first {
+margin-top: 0;
+}
+}
