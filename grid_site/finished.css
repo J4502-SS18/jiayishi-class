@@ -42,10 +42,6 @@ nav ul {
       margin: 5px;
     }
 
-    .pullquote {
-      display: block;
-    }
-
 }
 
 @media screen and (min-width:1000px) {
