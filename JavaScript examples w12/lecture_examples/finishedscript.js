@@ -11,7 +11,6 @@ alert("Yes, they’re equal");
 alert("No, they’re not equal");
 }
 
-
 var foo=10;
 var bar=20;
 if(foo<bar){
