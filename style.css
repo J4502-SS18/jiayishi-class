@@ -52,7 +52,8 @@ margin: 0;
 
 @media screen and (min-width: 600px) {
 nav ul{
-  display: flex;
+  display: none;
+
 }
 .menu-trigger {
     display: none;
