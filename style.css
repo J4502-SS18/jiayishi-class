@@ -12,18 +12,21 @@ h1{
   font-family: 'Julius Sans One', sans-serif;
   color: 	#3D7878;
   font-weight: bold;
+  order:2;
 }
 
 
 h2{
   font-family: 'Julius Sans One', sans-serif;
   color: 	#3D7878;
+  order:2;
 }
 
 .menu-trigger{
-  order: 1;
+  order:1;
   font-size: 1.75em;
   width: 2em;
+  color: #3D7878;
 }
 
 body{
@@ -48,6 +51,13 @@ margin: 0;
 
 
 @media screen and (min-width: 600px) {
+nav ul{
+  display: flex;
+}
+.menu-trigger {
+    display: none;
+}
+
 
     #container {
         width: 80%;
@@ -56,9 +66,7 @@ margin: 0;
       width: 100%;
     }
 }
-.menu-trigger {
-       display: none;
-   }
+
 
 #nav a:link, #nav a:visited{
   display:block;
@@ -110,12 +118,38 @@ font-family: 'Josefin Slab', serif;
 
 }
 
-img{
-  width: 100%;
+.image {
+width: auto;
+margin-right: 10px;
 }
 .wrapper{
   display: flex;
   flex-flow:row wrap;
+}
+
+@media screen and (min-width:700px) {
+  nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
 }
 
 /* When greater than 800px wide */
@@ -135,11 +169,29 @@ img{
   }
 
 
-article {
-display: flex;
-flex-flow: row;
-flex-wrap: wrap;
-}
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a b b"
+        "a c c";
+  }
+  .section1 {
+    grid-area: a;
+  }
+
+  .image {
+    grid-area: b;
+  }
+
+  .section2 {
+    grid-area: c;
+  }
+
+  .section1 p:first-of-type, .section2 p:first-of-type {
+    margin-top: 0;
+  }
 
 .image {
 width: auto;
@@ -154,6 +206,7 @@ width: 45%;
 margin-top: 0;
 }
 }
+
 @media screen and (min-width:1000px) {
   article {
     display: grid;
@@ -163,8 +216,7 @@ margin-top: 0;
         "a b b"
         "a c c";
   }
-.image
-{
+.image {
 width:800px;
 }
 
