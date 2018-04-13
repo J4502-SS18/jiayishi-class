@@ -19,6 +19,13 @@ h2{
   font-family: 'Julius Sans One', sans-serif;
   color: 	#3D7878;
 }
+
+.menu-trigger{
+  order: 1;
+  font-size: 1.75em;
+  width: 2em;
+}
+
 body{
 	background-color:	#D1E9E9;
 }
@@ -38,13 +45,7 @@ margin: 0;
   list-style-type: none;
   padding: 0;
 } */
-@media screen and (min-width: 450px) {
 
-    nav ul {
-        flex-flow: row;
-        justify-content: space-between;
-    }
-}
 
 @media screen and (min-width: 600px) {
 
@@ -55,6 +56,9 @@ margin: 0;
       width: 100%;
     }
 }
+.menu-trigger {
+       display: none;
+   }
 
 #nav a:link, #nav a:visited{
   display:block;
