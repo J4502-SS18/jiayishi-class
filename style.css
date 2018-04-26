@@ -178,6 +178,7 @@ header, article, aside, footer {
         "a b b"
         "a c c";
   }
+
   .section1 {
     grid-area: a;
   }
